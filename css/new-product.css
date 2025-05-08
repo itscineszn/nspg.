@@ -1,0 +1,1107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+main {
+   
+  top: 12vh;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3vh;
+}
+
+aside {
+    background: #3E2723;
+    width: 20%;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.stickyAside {
+    position: sticky;
+    top: 0;
+}
+
+
+.Brand-Name-Container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   
+}
+.Brand-Name{
+    font-size: 30px;
+    font-family: Garamond;
+    color: #FAF3E0;
+    
+}
+
+.img-nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.btn-ctz{
+    background-color: #5A3E36;
+    border: none;
+    color: #FFECC8;
+    font-weight: bold;
+    font-size: large;
+    font-family: helvetica;
+    margin: 25px 0;
+}
+
+.btn-ctz:hover{
+    background: gray;
+}
+
+.img-nav > a{
+    
+    text-decoration: none;
+    font-size: large;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #FFECC8;
+    padding: 30px 0;
+}
+
+.img-nav > a:hover{
+    background: gray;
+   
+   
+}
+
+.modal-body{
+    width: 100%;
+    height: auto;
+}
+
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 5;
+    background-color: #f7f7f7;
+    max-width: 80%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 30px;
+    align-items: center;
+}
+
+
+.title-modal{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+.close-modal{
+    border: none;
+    font-size: 50px;
+}
+
+#productItems {
+    width: 80%;
+    height: 2000px;
+}
+
+.banner {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5%;
+}
+
+.tittle-c{
+    background: #3E2723;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+}
+
+
+.tittle {
+    font-family: "Dancing Script", cursive;
+    font-weight: normal;  /* Replace 'weight' with the appropriate font weight */
+    font-style: normal;
+    display: flex;
+    color: rgb(252, 252, 252);
+    font-size: 5rem;
+    /* text-shadow: -5px -5px 8px black; */
+}
+
+#productItems {
+    height: 100%;
+    width: 80%;
+}
+
+.container{
+    
+
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(6, 10vw);
+    grid-template-rows: repeat(52, 20vh);   
+    grid-auto-rows: 200px; 
+    column-gap: 58px;
+    row-gap: 60px;
+   grid-template-areas: 
+   "Bday-Container Bday-Container Bday-Container Bday-Container Bday-Container Bday-Container"
+   "img-1 img-1 img-2 img-2 img-3 img-3"
+   "img-1 img-1 img-2 img-2 img-3 img-3"
+   "info-1 info-1 info-2 info-2 info-3 info-3" 
+   "img-4 img-4 img-5 img-5 img-6 img-6"
+   "img-4 img-4 img-5 img-5 img-6 img-6"
+   "info-4 info-4 info-5 info-5 info-6 info-6"
+   "img-7 img-7 img-8 img-8 img-9 img-9"
+   "img-7 img-7 img-8 img-8 img-9 img-9"
+    "info-7 info-7 info-8 info-8 info-9 info-9"
+   "img-10 img-10 img-11 img-11 img-12 img-12"
+   "img-10 img-10 img-11 img-11 img-12 img-12"
+    "info-10 info-10 info-11 info-11 info-12 info-12"
+
+   "wedding-container wedding-container wedding-container wedding-container wedding-container wedding-container"
+   "img-13 img-13 img-14 img-14 img-15 img-15"
+   "img-13 img-13 img-14 img-14 img-15 img-15"
+   "info-13 info-13 info-14 info-14 info-15 info-15"
+
+  "babtism babtism babtism babtism babtism babtism"
+   "img-16 img-16 img-17 img-17 img-18 img-18"
+   "img-16 img-16 img-17 img-17 img-18 img-18"
+   "info-16 info-16 info-17 info-17 info-18 info-18"
+   "img-19 img-19 img-20 img-20 img-21 img-21"
+   "img-19 img-19 img-20 img-20 img-21 img-21"
+   "info-19 info-19 info-20 info-20 info-21 info-21"
+   "img-22 img-22 img-23 img-23 img-24 img-24"
+   "img-22 img-22 img-23 img-23 img-24 img-24"
+   "info-22 info-22 info-23 info-23 info-24 info-24"
+   
+
+   "num num num num num num"
+   "img-25 img-25 img-26 img-26 img-27 img-27"
+   "img-25 img-25 img-26 img-26 img-27 img-27"
+    "info-25 info-25 info-26 info-26 info-27 info-27"
+   "img-28 img-28 img-29 img-29 img-30 img-30"
+   "img-28 img-28 img-29 img-29 img-30 img-30"
+    "info-28 info-28 info-29 info-29 info-30 info-30"
+   
+   "bento bento bento bento bento bento"
+   "img-31 img-31 img-32 img-32 img-33 img-33"
+   "img-31 img-31 img-32 img-32 img-33 img-33"
+    "info-31 info-31 info-32 info-32 info-33 info-33"
+
+   "cup cup cup cup cup cup"
+   "img-34 img-34 img-35 img-35 img-36 img-36"
+   "img-34 img-34 img-35 img-35 img-36 img-36"
+    "info-34 info-34 info-35 info-35 info-36 info-36"
+   "img-37 img-37 img-38 img-38 img-39 img-39"
+   "img-37 img-37 img-38 img-38 img-39 img-39"
+    "info-37 info-37 info-38 info-38 info-39 info-39"
+
+   "coo coo coo coo coo coo"
+   "img-40 img-40 img-41 img-41 img-42 img-42"
+   "img-40 img-40 img-41 img-41 img-42 img-42"
+    "info-40 info-40 info-41 info-41 info-42 info-42"
+   "img-43 img-43 img-44 img-44 img-45 img-45"
+   "img-43 img-43 img-44 img-44 img-45 img-45"
+    "info-43 info-43 info-44 info-44 info-45 info-45"
+   ;
+
+  
+}
+
+
+
+
+
+
+.Bday-Container{
+    grid-area: Bday-Container;
+}
+
+.Product-1-img{
+    grid-area:img-1;
+}
+
+.info-1{
+    grid-area: info-1;
+}
+
+.Product-2-img{
+    grid-area: img-2;
+}
+
+.info-2{
+    grid-area: info-2;
+}
+
+.Product-3-img{
+    grid-area: img-3;
+}
+
+.info-3{
+    grid-area: info-3;
+}
+
+.Product-4-img{
+    grid-area: img-4;
+}
+
+.info-4{
+    grid-area: info-4;
+}
+
+.info-4{
+    grid-area: info-4;
+}
+
+.Product-5-img{
+    grid-area: img-5;
+}
+
+.info-5{
+    grid-area: info-5;
+}
+
+.Product-6-img{
+    grid-area: img-6;
+}
+
+.info-6{
+    grid-area: info-6;
+}
+
+.Product-7-img{
+    grid-area: img-7;
+}
+
+.info-7{
+    grid-area: info-7;
+}
+
+.Product-8-img{
+    grid-area: img-8;
+}
+
+.info-8{
+    grid-area: info-8;
+}
+
+.Product-9-img{
+    grid-area: img-9;
+}
+
+.info-9 {
+    grid-area: info-9 ;
+}
+
+.Product-10-img{
+    grid-area: img-10;
+}
+
+.info-10 {
+    grid-area: info-10 ;
+}
+
+.Product-11-img{
+    grid-area: img-11;
+}
+
+.info-11 {
+    grid-area: info-11 ;
+}
+
+.Product-12-img{
+     grid-area: img-12;}
+
+     .info-12 {
+        grid-area: info-12 ;
+    }
+
+.Wedding-Container{
+    grid-area: wedding-container;
+}
+
+
+
+.Product-13-img{
+    grid-area: img-13;
+}
+
+.info-13 {
+    grid-area: info-13 ;
+}
+
+.Product-14-img{
+    grid-area: img-14;
+}
+
+.info-14 {
+    grid-area: info-14 ;
+}
+
+.Product-15-img{
+    grid-area: img-15;
+}
+
+.info-15 {
+    grid-area: info-15 ;
+}
+
+.babtism-Container{
+    grid-area: babtism;
+}
+
+.Product-16-img{
+    grid-area: img-16;
+}
+
+.info-16 {
+    grid-area: info-16 ;
+}
+
+.Product-17-img{
+    grid-area: img-17;
+}
+
+.info-17 {
+    grid-area: info-17 ;
+}
+
+.Product-18-img{
+    grid-area: img-18;
+}
+
+.info-18 {
+    grid-area: info-18 ;
+}
+
+.Product-19-img{
+    grid-area: img-19;
+}
+
+.info-19 {
+    grid-area: info-19 ;
+}
+
+.Product-20-img{
+    grid-area: img-20;
+}
+
+.info-20 {
+    grid-area: info-20 ;
+}
+
+.Product-21-img{
+    grid-area: img-21;
+}
+
+.info-21 {
+    grid-area: info-21 ;
+}
+
+.Product-22-img{
+    grid-area: img-22;
+}
+
+.info-22 {
+    grid-area: info-22 ;
+}
+
+.Product-23-img{
+    grid-area: img-23;
+}
+
+.info-23 {
+    grid-area: info-23 ;
+}
+
+.Product-24-img{
+    grid-area: img-24;
+}
+
+.info-24 {
+    grid-area: info-24 ;
+}
+
+
+.Number-Shaped-Container{
+    grid-area: num;
+}
+.Product-25-img{
+    grid-area: img-25;
+}
+
+.info-25 {
+    grid-area: info-25 ;
+}
+
+.Product-26-img{
+    grid-area: img-26;
+}
+
+.info-26 {
+    grid-area: info-26 ;
+}
+
+.Product-27-img{
+    grid-area: img-27;
+}
+
+.info-27 {
+    grid-area: info-27 ;
+}
+
+.Product-28-img{
+    grid-area: img-28;
+}
+
+.info-28 {
+    grid-area: info-28 ;
+}
+
+.Product-29-img{
+    grid-area: img-29;
+}
+
+.info-29 {
+    grid-area: info-29 ;
+}
+
+.Product-30-img{
+    grid-area: img-30;
+}
+
+.info-30 {
+    grid-area: info-30 ;
+}
+
+.Bento-Container{
+    grid-area: bento;
+}
+
+.Product-31-img{
+    grid-area: img-31;
+}
+
+.info-31 {
+    grid-area: info-31 ;
+}
+
+.Product-32-img{
+    grid-area: img-32;
+}
+.info-32 {
+    grid-area: info-32 ;
+}
+.Product-33-img{
+    grid-area: img-33;
+}
+.info-33 {
+    grid-area: info-33 ;
+}
+
+.Cupcakes-Container{
+    grid-area: cup;
+}
+.Product-34-img{
+    grid-area: img-34;
+}
+.info-34 {
+    grid-area: info-34 ;
+}
+.Product-35-img{
+    grid-area: img-35;
+}
+.info-35 {
+    grid-area: info-35 ;
+}
+.Product-36-img{
+    grid-area: img-36;
+}
+.info-36 {
+    grid-area: info-36 ;
+}
+.Product-37-img{
+    grid-area: img-37;
+}
+.info-37 {
+    grid-area: info-37 ;
+}
+.Product-38-img{
+    grid-area: img-38;
+}
+.info-38 {
+    grid-area: info-38 ;
+}
+.Product-39-img{
+    grid-area: img-39;
+}
+.info-39 {
+    grid-area: info-39 ;
+}
+.Cookies-Container{
+    grid-area: coo;
+}
+
+.Product-40-img{
+    grid-area: img-40;
+}
+.info-40 {
+    grid-area: info-40 ;
+}
+.Product-41-img{
+    grid-area: img-41;
+}
+.info-41 {
+    grid-area: info-41 ;
+}
+.Product-42-img{
+    grid-area: img-42;
+}
+.info-42 {
+    grid-area: info-42 ;
+}
+.Product-43-img{
+    grid-area: img-43;
+}
+.info-43 {
+    grid-area: info-43 ;
+}
+.Product-44-img{
+    grid-area: img-44;
+}
+.info-44 {
+    grid-area: info-44 ;
+}
+.Product-45-img{
+    grid-area: img-45;
+}
+.info-45 {
+    grid-area: info-45 ;
+}
+h4{
+    margin: 0;
+    font-size: 30px;
+}
+
+.info{
+    
+    position: relative;
+    
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    display: block;
+    
+  
+}
+
+.IMG-C {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.IMG {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: auto;
+    display: block;
+}
+
+.bg-tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 3;
+    pointer-events: none; /* keep this off to not block */
+}
+
+.IMG-C:hover .bg-tint {
+    opacity: 1;
+}
+
+
+
+.modal-body{
+    width: 100%;
+    height: auto;
+}
+
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    z-index: 5;
+    background-color: #f7f7f7;
+    max-width: 80%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 30px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+
+#overlay{
+    position: fixed;
+    opacity: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+    z-index: 3;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.title-modal{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+.close-modal{
+    border: none;
+    font-size: 50px;
+}
+
+
+
+
+    legend {
+      color: blue;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 3px 10px;
+      vertical-align: top;
+    }
+
+
+    input[type="button"] {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="button"]:hover {
+      background-color: #0056b3;
+    }
+
+    label{
+        font-family: Helvetica;
+        font-size: 1rem;
+    }
+   
+    input, textarea::placeholder {
+        font-weight: solid;
+        color: black;
+        font-weight: solid;
+     }
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/**
+    .container{
+        margin-top: 30px;
+        margin-left: 130px;
+        margin-right: 0;
+        row-gap: 20px;
+        column-gap: 10px;
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(79, 80px); 
+        grid-template-areas:  
+        " Bday-Container Bday-Container Bday-Container Bday-Container "
+        " img-1 img-1 img-2 img-2 "
+        " img-1 img-1 img-2 img-2 " 
+        " info-1 info-1 info-2 info-2"
+        " img-3 img-3 img-4 img-4 "
+        " img-3 img-3 img-4 img-4 "
+        "info-3 info-3 info-4 info-4 "
+        " img-5 img-5 img-6 img-6 "
+        " img-5 img-5 img-6 img-6 "
+        "info-5 info-5 info-6 info-6 "
+        " img-7 img-7 img-8 img-8 "
+        " img-7 img-7 img-8 img-8 "
+        "info-7 info-7 info-8 info-8 "
+        " img-9 img-9 img-10 img-10 "
+        " img-9 img-9 img-10 img-10 "
+        "info-9 info-9 info-10 info-10 "
+        " img-11 img-11 img-12 img-12 "
+        " img-11 img-11 img-12 img-12 "
+        "info-11 info-11 info-12 info-12 "
+
+        " wedding-container wedding-container wedding-container wedding-container "
+        " img-13 img-13 img-14 img-14 "
+        " img-13 img-13 img-14 img-14 "
+        "info-13 info-13 info-14 info-14 "
+        " . img-15 img-15 . "
+        " . img-15 img-15 . "
+        ". info-15 info-15 . "
+
+       " babtism babtism babtism babtism"
+        " img-16 img-16 img-17 img-17 "
+        " img-16 img-16 img-17 img-17 "
+        "info-16 info-16 info-17 info-17 "
+        " img-18 img-18 img-19 img-19 "
+        " img-18 img-18 img-19 img-19 "
+        "info-18 info-18 info-19 info-19 "
+        " img-20 img-20 img-21 img-21 "
+        " img-20 img-20 img-21 img-21 "
+        "info-20 info-20 info-21 info-21 "
+        " img-22 img-22 img-23 img-23 "
+        " img-22 img-22 img-23 img-23 "
+        "info-22 info-22 info-23 info-23 "
+        " . img-24 img-24 . "
+        " . img-24 img-24 . "
+        ". info-24 info-24 . "
+
+        " num num num num "
+        " img-25 img-25 img-26 img-26 "
+        " img-25 img-25 img-26 img-26 "
+        "info-25 info-25 info-26 info-26 "
+        " img-27 img-27 img-28 img-28 "
+        " img-27 img-27 img-28 img-28 "
+        "info-27 info-27 info-28 info-28 "
+        " img-29 img-29 img-30 img-30 "
+        " img-29 img-29 img-30 img-30 "
+        "info-29 info-29 info-30 info-30 "
+        
+        " bento bento bento bento "
+        " img-31 img-31 img-32 img-32 "
+        " img-31 img-31 img-32 img-32 "
+        "info-31 info-31 info-32 info-32 "
+        " . img-33 img-33 . "
+        " . img-33 img-33 . "
+        ". info-33 info-33 . "
+     
+        " cup cup cup cup "
+        " img-34 img-34 img-35 img-35 "
+        " img-34 img-34 img-35 img-35 "
+        "info-34 info-34 info-35 info-35 "
+        " img-36 img-36 img-37 img-37 "
+        " img-36 img-36 img-37 img-37 "
+        "info-36 info-36 info-37 info-37 "
+        " img-38 img-38 img-39 img-39 "
+        " img-38 img-38 img-39 img-39 "
+        "info-38 info-38 info-39 info-39 "
+        
+        " coo coo coo coo "
+        " img-40 img-40 img-41 img-41 "
+        " img-40 img-40 img-41 img-41 "
+        "info-40 info-40 info-41 info-41 "
+        " img-42 img-42 img-43 img-43 "
+        " img-42 img-42 img-43 img-43 "
+        "info-42 info-42 info-43 info-43 "
+        " img-44 img-44 img-45 img-45 "
+        " img-44 img-44 img-45 img-45 "
+        "info-44 info-44 info-45 info-45 "
+        ;
+    }
+}
+
+**/
+/* Tablet and Mobile (Portrait) - Max Width: 768px / /*
+@media (max-width: 414px) { 
+    h4{
+        font-size: .8rem;
+    }
+  
+
+    .container {
+        margin-left: 0;
+        grid-template-columns: repeat(4, 120px); 
+        grid-template-rows: auto;
+        row-gap: 1540px;
+        grid-template-areas:  
+        " Bday-Container Bday-Container Bday-Container Bday-Container "
+        " img-1 img-1 img-2 img-2 "
+        " img-1 img-1 img-2 img-2 " 
+        " info-1 info-1 info-2 info-2"
+        " img-3 img-3 img-4 img-4 "
+        " img-3 img-3 img-4 img-4 "
+        "info-3 info-3 info-4 info-4 "
+        " img-5 img-5 img-6 img-6 "
+        " img-5 img-5 img-6 img-6 "
+        "info-5 info-5 info-6 info-6 "
+        " img-7 img-7 img-8 img-8 "
+        " img-7 img-7 img-8 img-8 "
+        "info-7 info-7 info-8 info-8 "
+        " img-9 img-9 img-10 img-10 "
+        " img-9 img-9 img-10 img-10 "
+        "info-9 info-9 info-10 info-10 "
+        " img-11 img-11 img-12 img-12 "
+        " img-11 img-11 img-12 img-12 "
+        "info-11 info-11 info-12 info-12 "
+
+        " wedding-container wedding-container wedding-container wedding-container "
+        " img-13 img-13 img-14 img-14 "
+        " img-13 img-13 img-14 img-14 "
+        "info-13 info-13 info-14 info-14 "
+        " . img-15 img-15 . "
+        " . img-15 img-15 . "
+        ". info-15 info-15 . "
+
+       " babtism babtism babtism babtism"
+        " img-16 img-16 img-17 img-17 "
+        " img-16 img-16 img-17 img-17 "
+        "info-16 info-16 info-17 info-17 "
+        " img-18 img-18 img-19 img-19 "
+        " img-18 img-18 img-19 img-19 "
+        "info-18 info-18 info-19 info-19 "
+        " img-20 img-20 img-21 img-21 "
+        " img-20 img-20 img-21 img-21 "
+        "info-20 info-20 info-21 info-21 "
+        " img-22 img-22 img-23 img-23 "
+        " img-22 img-22 img-23 img-23 "
+        "info-22 info-22 info-23 info-23 "
+        " . img-24 img-24 . "
+        " . img-24 img-24 . "
+        ". info-24 info-24 . "
+
+        " num num num num "
+        " img-25 img-25 img-26 img-26 "
+        " img-25 img-25 img-26 img-26 "
+        "info-25 info-25 info-26 info-26 "
+        " img-27 img-27 img-28 img-28 "
+        " img-27 img-27 img-28 img-28 "
+        "info-27 info-27 info-28 info-28 "
+        " img-29 img-29 img-30 img-30 "
+        " img-29 img-29 img-30 img-30 "
+        "info-29 info-29 info-30 info-30 "
+        
+        " bento bento bento bento "
+        " img-31 img-31 img-32 img-32 "
+        " img-31 img-31 img-32 img-32 "
+        "info-31 info-31 info-32 info-32 "
+        " . img-33 img-33 . "
+        " . img-33 img-33 . "
+        ". info-33 info-33 . "
+     
+        " cup cup cup cup "
+        " img-34 img-34 img-35 img-35 "
+        " img-34 img-34 img-35 img-35 "
+        "info-34 info-34 info-35 info-35 "
+        " img-36 img-36 img-37 img-37 "
+        " img-36 img-36 img-37 img-37 "
+        "info-36 info-36 info-37 info-37 "
+        " img-38 img-38 img-39 img-39 "
+        " img-38 img-38 img-39 img-39 "
+        "info-38 info-38 info-39 info-39 "
+        
+        " coo coo coo coo "
+        " img-40 img-40 img-41 img-41 "
+        " img-40 img-40 img-41 img-41 "
+        "info-40 info-40 info-41 info-41 "
+        " img-42 img-42 img-43 img-43 "
+        " img-42 img-42 img-43 img-43 "
+        "info-42 info-42 info-43 info-43 "
+        " img-44 img-44 img-45 img-45 "
+        " img-44 img-44 img-45 img-45 "
+        "info-44 info-44 info-45 info-45 "
+        ;
+    }
+}
+
+/* Mobile (Landscape) and small tablets - Max Width: 1024px / /*
+@media (max-width: 1024px) {
+
+    }
+
+    
+
+
+/* Medium screens - Between 1024px and 1198px / /*
+@media (min-width: 1024px) and (max-width: 1198px) { 
+    /* Add styles for medium-sized screens / /*
+}
+
+/* Mobile Portrait - Max Width: 480px / /*
+@media (max-width: 480px) {
+    
+
+
+
+    h4{
+        font-size: .8rem;
+    }
+    
+    .info{
+        font-size: 10px;
+    }
+    .tittle{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .container {
+        margin-left: 0;
+        grid-template-columns: repeat(4, 120px); 
+        grid-template-rows: auto; 
+        row-gap: 200px;
+        
+        grid-template-areas:  
+        " Bday-Container Bday-Container Bday-Container Bday-Container "
+        " img-1 img-1 img-2 img-2 "
+        " img-1 img-1 img-2 img-2 " 
+        " info-1 info-1 info-2 info-2"
+        " img-3 img-3 img-4 img-4 "
+        " img-3 img-3 img-4 img-4 "
+        "info-3 info-3 info-4 info-4 "
+        " img-5 img-5 img-6 img-6 "
+        " img-5 img-5 img-6 img-6 "
+        "info-5 info-5 info-6 info-6 "
+        " img-7 img-7 img-8 img-8 "
+        " img-7 img-7 img-8 img-8 "
+        "info-7 info-7 info-8 info-8 "
+        " img-9 img-9 img-10 img-10 "
+        " img-9 img-9 img-10 img-10 "
+        "info-9 info-9 info-10 info-10 "
+        " img-11 img-11 img-12 img-12 "
+        " img-11 img-11 img-12 img-12 "
+        "info-11 info-11 info-12 info-12 "
+
+        " wedding-container wedding-container wedding-container wedding-container "
+        " img-13 img-13 img-14 img-14 "
+        " img-13 img-13 img-14 img-14 "
+        "info-13 info-13 info-14 info-14 "
+        " . img-15 img-15 . "
+        " . img-15 img-15 . "
+        ". info-15 info-15 . "
+
+       " babtism babtism babtism babtism"
+        " img-16 img-16 img-17 img-17 "
+        " img-16 img-16 img-17 img-17 "
+        "info-16 info-16 info-17 info-17 "
+        " img-18 img-18 img-19 img-19 "
+        " img-18 img-18 img-19 img-19 "
+        "info-18 info-18 info-19 info-19 "
+        " img-20 img-20 img-21 img-21 "
+        " img-20 img-20 img-21 img-21 "
+        "info-20 info-20 info-21 info-21 "
+        " img-22 img-22 img-23 img-23 "
+        " img-22 img-22 img-23 img-23 "
+        "info-22 info-22 info-23 info-23 "
+        " . img-24 img-24 . "
+        " . img-24 img-24 . "
+        ". info-24 info-24 . "
+
+        " num num num num "
+        " img-25 img-25 img-26 img-26 "
+        " img-25 img-25 img-26 img-26 "
+        "info-25 info-25 info-26 info-26 "
+        " img-27 img-27 img-28 img-28 "
+        " img-27 img-27 img-28 img-28 "
+        "info-27 info-27 info-28 info-28 "
+        " img-29 img-29 img-30 img-30 "
+        " img-29 img-29 img-30 img-30 "
+        "info-29 info-29 info-30 info-30 "
+        
+        " bento bento bento bento "
+        " img-31 img-31 img-32 img-32 "
+        " img-31 img-31 img-32 img-32 "
+        "info-31 info-31 info-32 info-32 "
+        " . img-33 img-33 . "
+        " . img-33 img-33 . "
+        ". info-33 info-33 . "
+     
+        " cup cup cup cup "
+        " img-34 img-34 img-35 img-35 "
+        " img-34 img-34 img-35 img-35 "
+        "info-34 info-34 info-35 info-35 "
+        " img-36 img-36 img-37 img-37 "
+        " img-36 img-36 img-37 img-37 "
+        "info-36 info-36 info-37 info-37 "
+        " img-38 img-38 img-39 img-39 "
+        " img-38 img-38 img-39 img-39 "
+        "info-38 info-38 info-39 info-39 "
+        
+        " coo coo coo coo "
+        " img-40 img-40 img-41 img-41 "
+        " img-40 img-40 img-41 img-41 "
+        "info-40 info-40 info-41 info-41 "
+        " img-42 img-42 img-43 img-43 "
+        " img-42 img-42 img-43 img-43 "
+        "info-42 info-42 info-43 info-43 "
+        " img-44 img-44 img-45 img-45 "
+        " img-44 img-44 img-45 img-45 "
+        "info-44 info-44 info-45 info-45 "
+        ;
+    }
+}
+
+/* Large screens (Desktop) - Min Width: 1200px / /*
+@media (min-width: 1200px) {
+    /* Add styles for large desktop screens / /*
+} 
+

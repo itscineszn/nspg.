@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/header/logo.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="mobileNav">
+                <li onclick=hideNav()><a href="#"><img src="/assets/header/close.png" alt="" style="height: 25px; width: 25px;"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="logo"><a href="#"><img src="/assets/header/logo.png" alt=""></a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="Product.html">Menu</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menuButton" onclick=showNav()><a href="#"><img src="/assets/header/menu.png" alt="" style="height: 25px; width: 25px;"></a></li>
+            </ul>
+        </nav>    
+</header>
+
+    <h1>CHECKOUT</h1>
+    <div class="main"> 
+    <div id="product-details"></div>
+    <a href="/Product.html" class="close">X</a>
+    <script>
+        // Get the 'id' parameter from the URL
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get("id");
+
+        // Example of a full list of products (1 to 45) with their details
+        const products = [
+            { id: 1, name: "Firefighter-themed Cake ",          description: "8x6 size ",                           price: 1700  , image: "https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-1.jpg" },
+            { id: 2, name: "Butterfly-themed Debut Cake ",      description: "2 layered (Top: 6x6, Bottom: 8x6)",   price: 3000 , image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-2.jpg " },
+            { id: 3, name: "Cars-themed Cake ",                 description: "6x6 ",                                price: 1300 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-3.jpg " },
+            { id: 4, name: "Triple Choco",                      description: "8x4 size ",                           price: 800 , image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-4.jpg   " },
+            { id: 5, name: "Blue-themed Debut Cake",            description: "6x6 size ",                           price: 1300 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-5.jpg  " },
+            { id: 6, name: "Mocha Chocolate Caket ",            description: "8x6 ",                                price: 1700 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-6.jpg " },
+            { id: 7, name: "Chocolate Drip Cake",               description: "6x6 ",                                price: 1500 , image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-7.jpg" },
+            { id: 8, name: "Basketball-themed Cake ",           description: "8x4 size ",                               price: 800 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-8.jpg " },
+            { id: 9, name: "Green-themed Cake ",                description: "6x6 ",                                     price: 1300 , image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-9.jpg" },
+            { id: 10, name: "White-themed Drip Cake",           description: "6x6 ",                                     price: 1300 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-10.jpg" },
+            { id: 11, name: "Woodland Inspired Debut Cake ",    description: "3 layers (Top:4x6, Mid:6x4, Bottom:8x9) ", price: 6000 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-11.jpg " },
+            { id: 12, name: "Jack Daniel’s Drip Cake",          description: "6x6 size ", price: 1500, image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/image-12.jpg "},
+            { id: 13, name: "Frosted Twins ",                   description: "8x6 ", price: 1500 ,  image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/13.jpg "},
+            { id: 14, name: "White Harmony",                    description: "8x6 ", price: 1500 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/14.jpg  " },
+            { id: 15, name: "Naked ",                           description: "2 layers (Top:6x4, Bottom:8x6)", price: 4000, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/15.jpg " },
+            { id: 16, name: "Pink  ",                           description: "6x6 ", price: 1600  ,image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/16.jpg  " },
+            { id: 17, name: "Hot air balloon",                  description: "8x6  ", price: 1700 ,  image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/17.jpg  "},
+            { id: 18, name: "Boss Baby-1",                      description: "6x6 ", price: 1300 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/18.jpg "},
+            { id: 19, name: "Star-themed",                      description: "6x6 ", price: 1300, image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/19.jpg  "},
+            { id: 20, name: "Cocomelon",                        description: "6x6 ", price: 1300, image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/20.jpg  " },
+            { id: 21, name: "Drip Cake  ",                      description: "6x6 ", price: 1300, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/21.jpg  " },
+            { id: 22, name: "Blue ",                            description: "6x6 ", price: 1300, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/22.jpg " },
+            { id: 23, name: "Boss Baby-2",                      description: "https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/23.jpg ", price: 2000, image:" /BABTISM-IMAGE/FB_IMG_1744275541231.jpg  " },
+            { id: 24, name: "Cloud",                            description: "8x4 ", price: 800 ,image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/24.jpg " },
+            { id: 25, name: "Firefighter",                      description: "", price: 700, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/25.jpg " },
+            { id: 26, name: "Blue",                             description: "", price: 700 ,image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/26.jpg " },
+            { id: 27, name: "Butterfly ",                       description: " ", price: 700, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/27.jpg " },
+            { id: 28, name: "Pink Rose",                        description: " ", price: 700 , image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/28.jpg  "},
+            { id: 29, name: "Mixed Color ",                     description: " ", price: 700, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/29.jpg  " },
+            { id: 30, name: "Red-Pink ",                        description: " ", price: 700, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/30.jpg " },
+            { id: 31, name: "Blue and White",                   description: "3x4, 8 Cupakes:3oz ", price: 380, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/31.jpg " },
+            { id: 32, name: "Floral Love",                      description: "3x4, 8 Cupakes:3oz ", price: 380,image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/32.jpg "  },
+            { id: 33, name: "Rosy Delight",                     description: "3x4, 8 Cupakes:3oz ", price: 380 ,image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/33.jpg " },
+            { id: 34, name: "Mocha Chocolate with lid",         description: "1 dozen ", price: 540, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/34.jpg  " },
+            { id: 35, name: "Pink ",                            description: "1 dozen ", price: 360,image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/35.jpg " },
+            { id: 36, name: "Pink-violet",                      description: "1 dozen", price: 360, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/36.jpg " },
+            { id: 37, name: "White-green ",                     description: "1 dozen", price: 360, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/37.jpg  " },
+            { id: 38, name: "Triple Chocolate Valentines ",     description: "4pcs", price: 120, image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/38.jpg  "},
+            { id: 39, name: "Chocolate Moist ",                 description: "4pcs", price: 120,  image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/39.jpg "},
+            { id: 40, name: "Choco Bites",                      description: "1dozen ", price: 120, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/40.jpg  " },
+            { id: 41, name: "Rustic Chunk",                     description: "1dozen ", price: 120, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/41.jpg " },
+            { id: 42, name: "Party Mix",                        description: "1dozen ", price: 120,  image:"https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/42.jpg  "},
+            { id: 43, name: "Marble Choco",                     description: "1dozen ", price: 120, image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/43.jpg " },
+            { id: 44, name: "Dark Velvet",                      description: "T1dozen ", price: 120 ,image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/44.jpg " },
+            { id: 45, name: "Matcha Cream",                     description: "1dozen ", price: 120,  image:" https://raw.githubusercontent.com/itscineszn/cake-website/PRODUCT/IMAGE-FOLD/45.jpg "},
+        ];
+
+        // Find the product that matches the id
+        const product = products.find(p => p.id == productId);
+
+        // Display the product details if a product is found
+        if (product) {
+            const productDetailsDiv = document.getElementById("product-details");
+            productDetailsDiv.innerHTML = `
+            <div class="product-container">
+
+                <img src="${product.image}" alt="${product.name}" class="product-image">
+
+                <div class="product-info">
+                    <h2 class="product-name" >${product.name}</h2>
+                    <p class="product-description">${product.description}</p>
+                    <p class="product-price">Price: ₱${product.price}</p>
+                </div>
+                
+            </div>
+            `;
+            
+        } else {
+            // If no product is found with the given id
+            document.getElementById("product-details").innerHTML = "<p>Product not found.</p>";
+        }
+    </script>
+
+
+    <div class="T-form"> 
+
+    <form >
+        <fieldset> 
+
+               <legend style="color: blue;">CHECKOUT</legend>
+
+                   <table border="0" > 
+                      
+                           
+                       
+
+                                           <tr>
+
+                                               <td> <label> Full name:</label></td>
+                                               <td> <input type="text" placeholder="Full name"required/> </td>
+                                               
+                                           </tr>
+
+                                           <tr>
+
+                                               <td> <label> Email:</label>  </td>
+                                               <td> <input type="email" placeholder="email"required/> </td>  
+
+                                           </tr> 
+                           
+                                           <tr>
+
+                                               <td> <label> Contact Number:</label></td> 
+                                               <td> <input type="text" placeholder="Contact Number"required/> </td>
+
+                                           </tr>
+
+                                           <tr>
+
+                                               <td> <label> Date:</label>  </td> 
+                                               <td> <input type="date" placeholder="Password"required/> </td> 
+
+                                           </tr>
+
+                                           <tr>
+
+                                               <td>  <label>Message on Cake:</label></td>
+                                               <td>  <textarea rows="5" cols="30">Message on Cake </textarea> <br></td>
+
+                                           </tr>    
+                               
+                                           <tr>
+
+                                               <td> Mode of Receiving Order: </td>   
+                                               <td><input type="radio" name="size" id="less than">   <label for="less than">Pickup </label></td>
+
+                                           </tr>
+
+                                           <tr>
+
+                                               <td>  </td>   
+                                               <td><input type="radio" name="size" id="11"> <label for="11">Delivery</label></td>
+
+                                           </tr>
+
+                       
+
+                                           <tr>
+
+                                               <td> Mode Of Payment: </td>
+                                               <td> <input type="radio" name="mop" id="gcash">  <label for="gcash"> GCASH</label>
+                                               <input type="radio" name="mop" id="bt">  <label for="bt">  Bank Transfer </label>
+                                               </td>
+
+                                           </tr> 
+
+                                           <tr>
+                                            <td> &nbsp;</td>
+                                            <td>
+                                                <input type="radio" name="mop" id="cod">  <label for="cod"> COD </label>
+                                            </td>
+                                           </tr>
+
+                                           <tr>
+                                                
+                                               <td></td>
+                                               <td> <input type="button" value="CHECKOUT"> </td>
+
+                                           </tr>  
+
+                                       
+
+                                       
+                                       </table>
+                      
+                   </fieldset>
+              
+           </form>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="containerFooter">
+    
+            <div class="quickLinks">
+                <!-- <p>Quick Links</p> -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cake-info.html">Cake Info</a></li>
+                </ul>
+            </div>
+    
+            
+            <div class="contactUs">
+                <p>Contact Us</p>
+                <ul>
+                    <li><img src="/assets/footer/call_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="tel:0975-784-3340">0975-784-3340</a></li>
+                    <li><img src="/assets/footer/mail_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="mailto:nathaliespastry@gmail.com">nathaliespastry@gmail.com</a></li>
+                    <li><img src="/assets/footer/language_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://www.facebook.com/profile.php?id=100063948244468">Nathalie's Sweet & Pastry Galore</a></li>
+                    <li><img src="/assets/footer/location_on_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://www.google.com/maps?q=San+Pedro+2+Magalang,+Pampanga&hl=en&fbclid=IwY2xjawKCy7ZleHRuA2FlbQIxMABicmlkETFHT0ZSaTNUWFFxR1RYTkhhAR7bMU8RckMtkzQtm3i75EI2bg6voS5IQDPaEAOG78M9j06DuhWdPfgeThtLTw_aem_O58ELtQVZtBK_P_4VTw0UQ">San Pedro 2 Magalang, Pampanga</a></li>
+                </ul>
+            </div>
+            
+            <div class="feedback">
+                <hr>
+                <p>Any Concerns?</p>
+                <label for="feedback"></label>
+                <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="Type your feedback here..."></textarea>
+                <p>We value your feedback and will get back to you as soon as possible.</p>
+                <button type="submit">Submit</button>
+                <hr>
+            </div>
+    
+            
+            <div class="copyright">
+                <p>&copy; 2025 Nathalie's Sweet and Pastry Galore. All rights reserved. 
+            </div>
+    
+            <div class="containerConditions">
+                <div class="terms">
+                    <a href="terms.html" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="privacy">
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

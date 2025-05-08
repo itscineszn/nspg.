@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+
+.close{
+    text-decoration: none;
+    font-size: 40px;
+    
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    color: black;
+    border: 1px solid;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+ 
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 90px 0;
+    color: #444;
+}
+
+
+
+/* Product Image Styling */
+.product-image {
+    width: 50%;
+    height: auto;
+    
+    border-radius: 8px;
+}
+
+/* Product Details Section */
+
+
+.product-name{
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 138px;
+}
+
+p {
+    font-size: 1.15rem;
+    margin: 10px 0;
+    line-height: 2.5rem;
+    color: #000000;
+}
+
+
+.product-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+#product-details {
+    max-width: 800px;
+   padding-left: 50vh;
+   background-color: #ffffff;
+    text-align: center;
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.product-container {
+    position: relative;
+    left: 0px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 800px;
+    
+    margin: 0 auto;
+    
+    background-color: #ffffff;
+}
+
+.product-image {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 1;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+/* Tablet and Mobile (Portrait) - Max Width: 768px */ 
+@media (max-width: 768px) {
+    .home-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-nav .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-nav .btn-home {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .T-form table {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .T-form input[type="text"], 
+    .T-form input[type="email"],
+    .T-form input[type="date"],
+    .T-form textarea {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Mobile (Landscape) - Max Width: 1024px */ 
+@media (max-width: 1024px) { 
+
+    #product-details {
+    
+        padding-left: 10vh;
+        
+     }
+    .home-nav {
+        flex-direction: row;
+    }
+
+    .home-nav .btn-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .T-form table {
+        width: 90%;
+    }
+
+    .T-form input[type="text"], 
+    .T-form input[type="email"],
+    .T-form input[type="date"],
+    .T-form textarea {
+        width: 100%;
+    }
+}
+
+/* Mobile Portrait - Max Width: 480px */ 
+@media (max-width: 480px) {
+    
+
+    .home-nav .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-nav .btn-home {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .T-form table {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .T-form input[type="text"], 
+    .T-form input[type="email"],
+    .T-form input[type="date"],
+    .T-form textarea {
+        width: 100%;
+    }
+}
+
+/* Large screens (Desktop) - Min Width: 1200px */ 
+@media (min-width: 1200px) {
+  
+
+    .home-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home-nav .btn-container {
+        
+        gap: 25px;
+    }
+
+    .T-form table {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1198px) {
+    #product-details {
+        padding-left: 5vh; 
+    }
+
+    .T-form table {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .T-form input[type="text"], 
+    .T-form input[type="email"],
+    .T-form input[type="date"],
+    .T-form textarea {
+        width: 100%;
+    }
+}

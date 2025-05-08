@@ -1,0 +1,286 @@
+footer {
+    background-color: #ffffff;
+    height: 100vh;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 2.5vmin;
+    z-index: 1000;
+}
+
+
+
+footer ul{
+    margin-top: 3%;
+    list-style: none;
+}
+footer li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer ul img{
+    margin-right: 2%;
+
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vmin;
+    font-weight: 400;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #B58A8A;
+    font-size: 2.5vmin;
+    font-weight: 400;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    gap: 10px;
+}
+
+.quickLinks p {
+    font-size: 2.5vmin;
+    font-weight: bold;
+    color: #4A2E2A;
+}
+
+.quickLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quickLinks li {
+    margin-bottom: 5px;
+}
+
+.quickLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vmin;
+    font-weight: 400;
+}
+
+.quickLinks a:hover {
+    color: #B58A8A;
+}
+
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    gap: 20px;
+}
+
+.contactUs p {
+    width: 100%;
+}
+.contactUs img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    gap: 20px;
+}
+
+#feedback {
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+}
+
+.feedback p {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.feedback button {
+    background-color: #DCB6B6;
+    border: 1px solid #DCB6B6;
+    border-radius: 100px;
+    color: white;
+    padding: 1%;
+    font-size: 1em;
+    cursor: pointer;
+    width: 10vw ;
+    margin-bottom: 2%;
+}
+
+.feedback button:hover {
+    background-color: #B58A8A;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2%;
+}
+
+.copyright p {
+    margin-top: 2%;
+}
+
+.containerConditions {
+    display: flex;
+    justify-content: center;
+    margin: 1% 2%;
+    gap: 10px;
+    padding-bottom: 5%;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+footer {
+    background-color: #ffffff;
+    height: 100vh;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 2.5vmin;
+}
+
+footer ul{
+    margin-top: 3%;
+    list-style: none;
+}
+footer li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer ul img{
+    margin-right: 2%;
+
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vmin;
+    font-weight: 400;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #B58A8A;
+    font-size: 2.5vmin;
+    font-weight: 400;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    gap: 20px;
+}
+
+.contactUs p {
+    width: 100%;
+}
+.contactUs img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    gap: 20px;
+}
+
+.feedback p {
+    margin-top: 2%;
+    width: 100%;
+}
+
+#feedback {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+}
+
+.feedback button {
+    background-color: #DCB6B6;
+    border: 1px solid #DCB6B6;
+    border-radius: 100px;
+    color: white;
+    padding: 1%;
+    font-size: 1em;
+    cursor: pointer;
+    width: 15vw ;
+    margin-bottom: 2%;
+}
+
+.feedback button:hover {
+    background-color: #B58A8A;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2%;
+}
+
+.copyright p {
+    margin-top: 2%;
+}
+
+.containerConditions {
+    display: flex;
+    justify-content: center;
+    margin: 1% 2%;
+    gap: 10px;
+    padding-bottom: 5%;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+}
+
+

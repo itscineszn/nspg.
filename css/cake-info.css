@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #DCB6B6;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: #DCB6B6;
+  }
+  
+  body {
+    background-color: #ffffff; 
+    font-family: 'Montserrat', sans-serif ;
+  }
+  
+  header {
+    background-color: #ffffff;
+    height: 12vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav {
+    height: 100%;
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navButtons {
+    display: flex;
+    column-gap: 10%;
+    padding: 0% 2%;
+  }
+  
+  .logoContainer {
+    background-color: white;
+    border-radius: 100px; 
+    width: 5vw; 
+  }
+  
+  .logoContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit:cover;
+  }
+
+  .banner {
+    text-align: center;
+    font-size: 2rem;
+    color: #d99159;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .cake-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 40px 20px;
+    background-color: #fff8f0;
+  }
+  
+  .info-card {
+    flex: 1 1 45%;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    color: #5a3e36;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .info-card .icon {
+    font-size: 3rem;
+    color: #d99159;
+    margin-bottom: 16px;
+  }
+  
+  .info-card h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #d99159;
+    margin-bottom: 8px;
+  }
+  
+  .info-card p,
+  .info-card ul {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .info-card ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .info-card ul li {
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .info-card ul li::before {
+    content: "• ";
+    color: #d99159;
+    position: absolute;
+    left: 0;
+  }
+  
+  .note {
+    background-color: #fff3d3;
+    color: #d99159;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .info-card p.note {
+    font-style: italic;
+  }
+  
+
+@media (max-width: 767px) {
+  .cake-info-section {
+    flex-direction: column;
+    padding: 20px 12px;
+  }
+
+  .info-card {
+    flex: 1 1 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .info-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .info-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-card ul {
+   text-align: left;
+  }
+
+  .info-card ul li {
+    padding-left: 18px;
+  }
+
+  .note {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .info-card {
+    flex: 1 1 100%;
+    padding: 22px;
+  }
+
+  .cake-info-section {
+    gap: 20px;
+  }
+
+  .info-card .icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .info-card {
+    flex: 1 1 48%;
+  }
+}

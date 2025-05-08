@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/header/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+        <ul class="mobileNav">
+            <li onclick=hideNav()><a href="#"><img src="/assets/header/close.png" alt="" style="height: 25px; width: 25px;"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Product.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="logo"><a href="#"><img src="/assets/header/logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Product.html">Menu</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menuButton" onclick=showNav()><a href="#"><img src="/assets/header/menu.png" alt="" style="height: 25px; width: 25px;"></a></li>
+        </ul>
+    </nav>
+
+</header>
+   
+  <div class="cover">
+    <img src="assets/about/cover.jpg" alt="Our Story" class="cover-img">
+    <div class="cover-text">
+        <h1>About Us</h1>
+    </div>
+</div>
+
+<section class="story-section">
+  <h2 class="story-title">Our Sweet Story</h2>
+  <div class="story-wrapper">
+    <div class="story-slide">
+      <img src="assets/about/slide1.jpg" alt="Graham Balls">
+      <div class="story-text">
+        <h3>2016: The Beginning</h3>
+        <p>What started as selling graham balls turned into something bigger. It all began with a small batch of graham balls, made with love and passion.</p>
+      </div>
+    </div>
+
+    <div class="story-slide">
+      <img src="assets/about/slide2.png" alt="Trade Fair">
+      <div class="story-text">
+        <h3>Trade Fair Milestone</h3>
+        <p>We took a leap and joined our first trade fair to introduce our treats to more people. The experience was invaluable.</p>
+      </div>
+    </div>
+
+    <div class="story-slide">
+      <img src="assets/about/slide3.png" alt="New Products">
+      <div class="story-text">
+        <h3>Business Growth</h3>
+        <p>As word spread, our menu expanded. We started experimenting with different sweets like cakes in a tub, mousse, and other desserts.</p>
+      </div>
+    </div>
+
+    <div class="story-slide">
+      <img src="assets/about/slide4.png" alt="Happy Customer">
+      <div class="story-text">
+        <h3>Customer Appreciation</h3>
+        <p>Through all the challenges, it’s the smiles on our customers' faces that keep us going. We’re grateful for the support and love we’ve received.</p>
+      </div>
+    </div>
+
+    <div class="story-slide">
+      <img src="assets/about/slide5.png" alt="Looking Ahead">
+      <div class="story-text">
+        <h3>Looking Ahead</h3>
+        <p>Together, we're not just making sweets — we're building dreams. With every creation, we're excited for the next chapter, and we're grateful to be growing side by side.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="staff-section">
+    <h3>Staff</h3>
+    <div class="staff-container">
+      <div class="staff-card">
+        <img src="assets/about/staff1.png" alt="Joanne N. Tuazon" class="staff-img">
+        <h5>Joanne N. Tuazon</h5><br>
+        <p>Owner / Cake Designer & Baker</p><br>
+        <p>She leads the business, bakes cakes, and adds her creative touch through beautiful decorations.</p>
+      </div>
+
+      <div class="staff-card">
+        <img src="assets/about/staff2.jpg" alt="Edmar F. Martinez" class="staff-img">
+        <h5>Edmar F. Martinez</h5><br>
+        <p>Icing Finisher</p><br>
+        <p>He helps by making sure the cake surfaces are clean and smooth, preparing them for decoration.</p>
+      </div>
+
+      <div class="staff-card">
+        <img src="assets/about/staff3.png" alt="Francine T. Soliman" class="staff-img">
+        <h5>Francine T. Soliman</h5><br>
+        <p>Baker</p><br>
+        <p>She bakes most of the cakes and ensures that every batch is soft, moist, and perfectly baked.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="location">
+    <h3>Location</h3>
+    <p>We are a home-based business located in Purok 7, San Pedro 2, Magalang, Pampanga.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1746126495226!6m8!1m7!1s4UPMhWtzDoNS22qNmGjM-w!2m2!1d15.21397534822338!2d120.6458288250098!3f196.70498375987515!4f-6.382859181499384!5f0.7820865974627469" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+
+<section class="reviews-section">
+  <h3>Proof of Orders</h3>
+  <div class="carousel-container" id="reviews-carousel">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-track">
+      <div class="review-slide">
+        <img src="assets/about/review1.png" alt="Customer Review 1">
+      </div>
+      <div class="review-slide">
+        <img src="assets/about/review2.png" alt="Customer Review 2">
+      </div>
+      <div class="review-slide">
+        <img src="assets/about/review3.png" alt="Customer Review 3">
+      </div>
+      <div class="review-slide">
+        <img src="assets/about/review4.png" alt="Customer Review 4">
+      </div>
+      <div class="review-slide">
+        <img src="assets/about/review5.png" alt="Customer Review 5">
+      </div>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+
+ 
+<footer>
+  <div class="containerFooter">
+
+      <div class="quickLinks">
+          <!-- <p>Quick Links</p> -->
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Product.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="cake-info.html">Cake Info</a></li>
+          </ul>
+      </div>
+
+      
+      <div class="contactUs">
+          <p>Contact Us</p>
+          <ul>
+              <li><img src="/assets/footer/call_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="tel:0975-784-3340">0975-784-3340</a></li>
+              <li><img src="/assets/footer/mail_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="mailto:nathaliespastry@gmail.com">nathaliespastry@gmail.com</a></li>
+              <li><img src="/assets/footer/language_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://www.facebook.com/profile.php?id=100063948244468">Nathalie's Sweet & Pastry Galore</a></li>
+              <li><img src="/assets/footer/location_on_24dp_DCB6B6_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://www.google.com/maps?q=San+Pedro+2+Magalang,+Pampanga&hl=en&fbclid=IwY2xjawKCy7ZleHRuA2FlbQIxMABicmlkETFHT0ZSaTNUWFFxR1RYTkhhAR7bMU8RckMtkzQtm3i75EI2bg6voS5IQDPaEAOG78M9j06DuhWdPfgeThtLTw_aem_O58ELtQVZtBK_P_4VTw0UQ">San Pedro 2 Magalang, Pampanga</a></li>
+          </ul>
+      </div>
+      
+      <div class="feedback">
+          <hr>
+          <p>Any Concerns?</p>
+          <label for="feedback"></label>
+          <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="Type your feedback here..."></textarea>
+          <p>We value your feedback and will get back to you as soon as possible.</p>
+          <button type="submit">Submit</button>
+          <hr>
+      </div>
+
+      
+      <div class="copyright">
+          <p>&copy; 2025 Nathalie's Sweet and Pastry Galore. All rights reserved. 
+      </div>
+
+      <div class="containerConditions">
+          <div class="terms">
+              <a href="terms.html" class="footer-link">Terms of Service</a>
+          </div>
+          <div class="privacy">
+              <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      </div>
+  </div>
+  </div>
+  
+</footer>
+    
+  <script src="js/about.js"> </script>
+
+    </body>
+    </html>

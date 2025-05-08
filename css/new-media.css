@@ -1,0 +1,947 @@
+@media (max-width: 1280px) and (min-width: 1025px) {
+
+
+    
+  #productItems {
+    width: 80%;
+    
+}
+
+aside{
+  width: 20%;
+}
+
+    .modal-header{
+     
+      padding:0;
+      align-items: center;
+     
+  }
+  
+  input[type="text"], input[type="email"], input[type="date"], textarea {
+      width: 70%;
+      padding: 10px;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+    td {
+      padding: 5px 5px;
+      vertical-align: top;
+    }
+  
+    label{
+      font-size: 1rem;
+    }
+  
+    .modal.active{
+      transform: translate(-50%, -45%) scale(1);
+  }
+  
+  
+  .modal{
+    
+      max-width: 100%;
+  }
+  
+  
+      .btn-home {
+          margin: 0;
+          padding: 10px;
+          font-size: 25px;
+          font-weight: bold;
+      }
+  
+      aside{
+        width: 20%;
+      }
+  
+      .container {
+         
+          grid-template-columns: repeat(6, 20vh);
+      }
+  }
+  
+  /* For screen sizes from 769px to 1024px */
+  @media (max-width: 1024px) and (min-width: 860px) {
+  
+      
+    #productItems {
+      width: 80%;
+      
+  }
+
+  aside{
+    width: 20%;
+  }
+   
+  
+    .modal-header{
+     
+      padding:0;
+      align-items: center;
+     
+  }
+  
+  input[type="text"], input[type="email"], input[type="date"], textarea {
+      width: 70%;
+      padding: 10px;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+    td {
+      padding: 5px 5px;
+      vertical-align: top;
+    }
+  
+    label{
+      font-size: 1rem;
+    }
+  
+    .modal.active{
+      transform: translate(-50%, -45%) scale(1);
+  }
+  
+  
+  .modal{
+    
+      max-width: 95%;
+  }
+  
+  
+  
+      .btn-home {
+          margin: 0;
+          padding: 10px;
+          font-size: 25px;
+          font-weight: bold;
+      }
+  
+      .img-nav-container {
+          width: 170px;
+          top: 50px;
+      }
+  
+      .container {
+          
+          grid-template-columns: repeat(6, 110px);
+      }
+  }
+  
+  
+  @media screen and (max-width: 1024px) and (max-height: 600px) {
+      
+    #productItems {
+      width: 80%;
+      
+  }
+    aside{
+      width: 20%;
+    }
+    .modal {
+          
+        max-height: 90vh; /* Allow the modal to scale with the viewport height */
+        overflow-y: auto; /* Adds scrolling inside the modal */
+        padding: 20px;
+      }
+    
+      .modal-body {
+        height: auto; /* Ensure content height is flexible */
+      }
+    
+      table {
+        font-size: 0.95rem;
+      }
+    
+      input[type="button"] {
+        width: 100%;
+      }
+    
+      td {
+        display: block;
+        width: 100%;
+      }
+    }
+  
+  
+  @media (max-width: 859px){
+  
+    #productItems {
+      width: 80%;
+      
+  }
+
+  aside{
+    width: 20%;
+  }
+      .modal {
+          width: 100%;
+          max-width: 100%;
+          max-height: 95vh;
+          padding: 15px;
+          border-radius: 0;
+          overflow-y: auto;
+        }
+  
+ 
+  
+    .modal-header{
+     
+      padding:0;
+      align-items: center;
+     
+  }
+  
+  input[type="text"], input[type="email"], input[type="date"], textarea {
+      width: 70%;
+      padding: 10px;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  .img-nav > a{
+    font-size: 1rem;
+  }
+
+  aside{
+    width: 20%;
+  }
+    td {
+      padding: 2px 5px;
+      vertical-align: top;
+    }
+  
+    label{
+      font-size: 1rem;
+    }
+  
+    .modal.active{
+      transform: translate(-50%, -45%) scale(1);
+  }
+  
+      .btn-home {
+          margin: 0;
+          padding: 10px;
+          font-size: 25px;
+          font-weight: bold;
+      }
+  
+      .img-nav > a{
+        font-size: .8rem;
+      }
+      .btn-ctz{
+          font-size: .8rem;
+      }
+
+      .Brand-Name{
+        font-size: 1.5rem;
+      }
+
+      .tittle{
+        font-size: 3rem;
+      }
+      .container {
+         
+          grid-template-columns: repeat(4, 10vh);
+          grid-template-rows: auto; 
+          grid-template-areas:  
+          " Bday-Container Bday-Container Bday-Container Bday-Container "
+          " img-1 img-1 img-2 img-2 "
+          " img-1 img-1 img-2 img-2 " 
+          " info-1 info-1 info-2 info-2"
+          " img-3 img-3 img-4 img-4 "
+          " img-3 img-3 img-4 img-4 "
+          "info-3 info-3 info-4 info-4 "
+          " img-5 img-5 img-6 img-6 "
+          " img-5 img-5 img-6 img-6 "
+          "info-5 info-5 info-6 info-6 "
+          " img-7 img-7 img-8 img-8 "
+          " img-7 img-7 img-8 img-8 "
+          "info-7 info-7 info-8 info-8 "
+          " img-9 img-9 img-10 img-10 "
+          " img-9 img-9 img-10 img-10 "
+          "info-9 info-9 info-10 info-10 "
+          " img-11 img-11 img-12 img-12 "
+          " img-11 img-11 img-12 img-12 "
+          "info-11 info-11 info-12 info-12 "
+  
+          " wedding-container wedding-container wedding-container wedding-container "
+          " img-13 img-13 img-14 img-14 "
+          " img-13 img-13 img-14 img-14 "
+          "info-13 info-13 info-14 info-14 "
+          " . img-15 img-15 . "
+          " . img-15 img-15 . "
+          ". info-15 info-15 . "
+  
+         " babtism babtism babtism babtism"
+          " img-16 img-16 img-17 img-17 "
+          " img-16 img-16 img-17 img-17 "
+          "info-16 info-16 info-17 info-17 "
+          " img-18 img-18 img-19 img-19 "
+          " img-18 img-18 img-19 img-19 "
+          "info-18 info-18 info-19 info-19 "
+          " img-20 img-20 img-21 img-21 "
+          " img-20 img-20 img-21 img-21 "
+          "info-20 info-20 info-21 info-21 "
+          " img-22 img-22 img-23 img-23 "
+          " img-22 img-22 img-23 img-23 "
+          "info-22 info-22 info-23 info-23 "
+          " . img-24 img-24 . "
+          " . img-24 img-24 . "
+          ". info-24 info-24 . "
+  
+          " num num num num "
+          " img-25 img-25 img-26 img-26 "
+          " img-25 img-25 img-26 img-26 "
+          "info-25 info-25 info-26 info-26 "
+          " img-27 img-27 img-28 img-28 "
+          " img-27 img-27 img-28 img-28 "
+          "info-27 info-27 info-28 info-28 "
+          " img-29 img-29 img-30 img-30 "
+          " img-29 img-29 img-30 img-30 "
+          "info-29 info-29 info-30 info-30 "
+          
+          " bento bento bento bento "
+          " img-31 img-31 img-32 img-32 "
+          " img-31 img-31 img-32 img-32 "
+          "info-31 info-31 info-32 info-32 "
+          " . img-33 img-33 . "
+          " . img-33 img-33 . "
+          ". info-33 info-33 . "
+       
+          " cup cup cup cup "
+          " img-34 img-34 img-35 img-35 "
+          " img-34 img-34 img-35 img-35 "
+          "info-34 info-34 info-35 info-35 "
+          " img-36 img-36 img-37 img-37 "
+          " img-36 img-36 img-37 img-37 "
+          "info-36 info-36 info-37 info-37 "
+          " img-38 img-38 img-39 img-39 "
+          " img-38 img-38 img-39 img-39 "
+          "info-38 info-38 info-39 info-39 "
+          
+          " coo coo coo coo "
+          " img-40 img-40 img-41 img-41 "
+          " img-40 img-40 img-41 img-41 "
+          "info-40 info-40 info-41 info-41 "
+          " img-42 img-42 img-43 img-43 "
+          " img-42 img-42 img-43 img-43 "
+          "info-42 info-42 info-43 info-43 "
+          " img-44 img-44 img-45 img-45 "
+          " img-44 img-44 img-45 img-45 "
+          "info-44 info-44 info-45 info-45 "
+          ;
+      }
+  
+  }
+  
+  
+  
+  
+  /* For screen sizes from 431px to 768px */ 
+  @media (max-width: 600px)  {
+  
+  
+    #productItems {
+      width: 80%;
+      
+      
+  }
+
+  aside{
+    width: 20%;
+  }
+      .title-moda{
+          font-size: 2px;
+    }
+  
+    .modal-header{
+     
+      padding:0;
+      align-items: center;
+     
+  }
+  
+  input[type="text"], input[type="email"], input[type="date"], textarea {
+      width: 70%;
+      padding: 10px;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+    td {
+      padding: 2px 5px;
+      vertical-align: top;
+    }
+  
+    label{
+      font-size: 10px;
+    }
+  
+    .modal.active{
+      transform: translate(-50%, -45%) scale(1);
+  }
+  
+  
+  .modal{
+    
+      max-width: 95%;
+  }
+  
+  
+  
+      .btn-home {
+          margin: 0;
+          padding: 10px;
+          font-size: 1rem;
+          font-weight: bold;
+      }
+  
+      .img-nav-container {
+          width: 150px;
+          top: 50px;
+      }
+  
+      .Brand-Name{
+          font-size: 1.3rem;
+      }
+  
+      .img-nav > a{
+          font-size: .7rem;
+      }
+  
+      .btn-ctz{
+          font-size: .7rem;
+      }
+  
+      .tittle{
+          font-size: 1rem;
+      }
+  
+      h4{
+          font-size: 1rem;
+      }
+  
+      .info > p{
+          font-size: .5rem;
+      }
+      #mainContent {
+       
+        gap: 0;
+    }
+      .container{
+         
+         gap: 0;
+          margin-right: 0;
+          row-gap: 40px;
+          column-gap: 20px;
+          grid-template-columns: repeat(4, 10vh);
+          grid-template-rows: repeat(79, 5vh); 
+          grid-template-areas:  
+          " Bday-Container Bday-Container Bday-Container Bday-Container "
+          " img-1 img-1 img-2 img-2 "
+          " img-1 img-1 img-2 img-2 " 
+          " info-1 info-1 info-2 info-2"
+          " img-3 img-3 img-4 img-4 "
+          " img-3 img-3 img-4 img-4 "
+          "info-3 info-3 info-4 info-4 "
+          " img-5 img-5 img-6 img-6 "
+          " img-5 img-5 img-6 img-6 "
+          "info-5 info-5 info-6 info-6 "
+          " img-7 img-7 img-8 img-8 "
+          " img-7 img-7 img-8 img-8 "
+          "info-7 info-7 info-8 info-8 "
+          " img-9 img-9 img-10 img-10 "
+          " img-9 img-9 img-10 img-10 "
+          "info-9 info-9 info-10 info-10 "
+          " img-11 img-11 img-12 img-12 "
+          " img-11 img-11 img-12 img-12 "
+          "info-11 info-11 info-12 info-12 "
+  
+          " wedding-container wedding-container wedding-container wedding-container "
+          " img-13 img-13 img-14 img-14 "
+          " img-13 img-13 img-14 img-14 "
+          "info-13 info-13 info-14 info-14 "
+          " . img-15 img-15 . "
+          " . img-15 img-15 . "
+          ". info-15 info-15 . "
+  
+         " babtism babtism babtism babtism"
+          " img-16 img-16 img-17 img-17 "
+          " img-16 img-16 img-17 img-17 "
+          "info-16 info-16 info-17 info-17 "
+          " img-18 img-18 img-19 img-19 "
+          " img-18 img-18 img-19 img-19 "
+          "info-18 info-18 info-19 info-19 "
+          " img-20 img-20 img-21 img-21 "
+          " img-20 img-20 img-21 img-21 "
+          "info-20 info-20 info-21 info-21 "
+          " img-22 img-22 img-23 img-23 "
+          " img-22 img-22 img-23 img-23 "
+          "info-22 info-22 info-23 info-23 "
+          " . img-24 img-24 . "
+          " . img-24 img-24 . "
+          ". info-24 info-24 . "
+  
+          " num num num num "
+          " img-25 img-25 img-26 img-26 "
+          " img-25 img-25 img-26 img-26 "
+          "info-25 info-25 info-26 info-26 "
+          " img-27 img-27 img-28 img-28 "
+          " img-27 img-27 img-28 img-28 "
+          "info-27 info-27 info-28 info-28 "
+          " img-29 img-29 img-30 img-30 "
+          " img-29 img-29 img-30 img-30 "
+          "info-29 info-29 info-30 info-30 "
+          
+          " bento bento bento bento "
+          " img-31 img-31 img-32 img-32 "
+          " img-31 img-31 img-32 img-32 "
+          "info-31 info-31 info-32 info-32 "
+          " . img-33 img-33 . "
+          " . img-33 img-33 . "
+          ". info-33 info-33 . "
+       
+          " cup cup cup cup "
+          " img-34 img-34 img-35 img-35 "
+          " img-34 img-34 img-35 img-35 "
+          "info-34 info-34 info-35 info-35 "
+          " img-36 img-36 img-37 img-37 "
+          " img-36 img-36 img-37 img-37 "
+          "info-36 info-36 info-37 info-37 "
+          " img-38 img-38 img-39 img-39 "
+          " img-38 img-38 img-39 img-39 "
+          "info-38 info-38 info-39 info-39 "
+          
+          " coo coo coo coo "
+          " img-40 img-40 img-41 img-41 "
+          " img-40 img-40 img-41 img-41 "
+          "info-40 info-40 info-41 info-41 "
+          " img-42 img-42 img-43 img-43 "
+          " img-42 img-42 img-43 img-43 "
+          "info-42 info-42 info-43 info-43 "
+          " img-44 img-44 img-45 img-45 "
+          " img-44 img-44 img-45 img-45 "
+          "info-44 info-44 info-45 info-45 "
+          ;
+      }
+  
+  
+  
+      
+  } 
+  
+  
+  /* For screen sizes up to 430px */
+  @media (max-width: 430px){
+  
+
+    #productItems {
+      width: 80%;
+      
+  }
+
+  aside{
+    width: 20%;
+  }
+
+    #mainContent {
+       
+      gap: 0;
+  }
+      
+      .modal {
+          width: 100%;
+          max-width: 100%;
+          max-height: 95vh;
+          padding: 15px;
+          border-radius: 0;
+          overflow-y: auto;
+        }
+      
+        .modal-header {
+          
+          padding: 15px;
+        }
+      
+        .title-modal {
+          font-size: 1rem;
+        }
+      
+        .close-modal {
+          font-size: 30px;
+          align-self: flex-end;
+        }
+      
+        table {
+          font-size: 0.85rem;
+        }
+      
+        td {
+          display: block;
+          width: 100%;
+          padding: 5px 0;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+          width: 100%;
+          font-size: 0.9rem;
+          padding: 8px;
+        }
+      
+        input[type="button"] {
+          width: 100%;
+          padding: 12px;
+          font-size: 1rem;
+        }
+      
+  
+  
+  
+      .btn-home {
+          margin: 0;
+          padding: 5px;
+          font-size: .8rem;
+          font-weight: bold;
+      }
+  
+      .Brand-Name{
+          font-size: 1rem;
+          padding-top: 2vh;
+      }
+  
+      .tittle{
+          font-size: 1rem;
+      }
+  
+      h4{
+          font-size: .7rem;
+      }
+  
+       .info > p{
+          font-size: .5rem;
+      }
+  
+      .img-nav-container {
+          width: 120px;
+          top: 50px;
+      }
+  
+      .btn-ctz{
+          font-size: .5rem;
+      }
+      .img-nav > a{
+          font-size: .5rem;
+      }
+  
+  
+      aside{
+        width: 15vh;
+      }
+  
+      #mainContent {
+       
+        gap: 0;
+    }
+      .container{
+          
+          
+          margin-right: 0;
+          row-gap: 30px;
+          column-gap: 10px;
+          grid-template-columns: repeat(4, 5vh);
+          grid-template-rows: repeat(79, 10vh); 
+          grid-template-areas:  
+          " Bday-Container Bday-Container Bday-Container Bday-Container "
+          " img-1 img-1 img-2 img-2 "
+          " img-1 img-1 img-2 img-2 " 
+          " info-1 info-1 info-2 info-2"
+          " img-3 img-3 img-4 img-4 "
+          " img-3 img-3 img-4 img-4 "
+          "info-3 info-3 info-4 info-4 "
+          " img-5 img-5 img-6 img-6 "
+          " img-5 img-5 img-6 img-6 "
+          "info-5 info-5 info-6 info-6 "
+          " img-7 img-7 img-8 img-8 "
+          " img-7 img-7 img-8 img-8 "
+          "info-7 info-7 info-8 info-8 "
+          " img-9 img-9 img-10 img-10 "
+          " img-9 img-9 img-10 img-10 "
+          "info-9 info-9 info-10 info-10 "
+          " img-11 img-11 img-12 img-12 "
+          " img-11 img-11 img-12 img-12 "
+          "info-11 info-11 info-12 info-12 "
+  
+          " wedding-container wedding-container wedding-container wedding-container "
+          " img-13 img-13 img-14 img-14 "
+          " img-13 img-13 img-14 img-14 "
+          "info-13 info-13 info-14 info-14 "
+          " . img-15 img-15 . "
+          " . img-15 img-15 . "
+          ". info-15 info-15 . "
+  
+         " babtism babtism babtism babtism"
+          " img-16 img-16 img-17 img-17 "
+          " img-16 img-16 img-17 img-17 "
+          "info-16 info-16 info-17 info-17 "
+          " img-18 img-18 img-19 img-19 "
+          " img-18 img-18 img-19 img-19 "
+          "info-18 info-18 info-19 info-19 "
+          " img-20 img-20 img-21 img-21 "
+          " img-20 img-20 img-21 img-21 "
+          "info-20 info-20 info-21 info-21 "
+          " img-22 img-22 img-23 img-23 "
+          " img-22 img-22 img-23 img-23 "
+          "info-22 info-22 info-23 info-23 "
+          " . img-24 img-24 . "
+          " . img-24 img-24 . "
+          ". info-24 info-24 . "
+  
+          " num num num num "
+          " img-25 img-25 img-26 img-26 "
+          " img-25 img-25 img-26 img-26 "
+          "info-25 info-25 info-26 info-26 "
+          " img-27 img-27 img-28 img-28 "
+          " img-27 img-27 img-28 img-28 "
+          "info-27 info-27 info-28 info-28 "
+          " img-29 img-29 img-30 img-30 "
+          " img-29 img-29 img-30 img-30 "
+          "info-29 info-29 info-30 info-30 "
+          
+          " bento bento bento bento "
+          " img-31 img-31 img-32 img-32 "
+          " img-31 img-31 img-32 img-32 "
+          "info-31 info-31 info-32 info-32 "
+          " . img-33 img-33 . "
+          " . img-33 img-33 . "
+          ". info-33 info-33 . "
+       
+          " cup cup cup cup "
+          " img-34 img-34 img-35 img-35 "
+          " img-34 img-34 img-35 img-35 "
+          "info-34 info-34 info-35 info-35 "
+          " img-36 img-36 img-37 img-37 "
+          " img-36 img-36 img-37 img-37 "
+          "info-36 info-36 info-37 info-37 "
+          " img-38 img-38 img-39 img-39 "
+          " img-38 img-38 img-39 img-39 "
+          "info-38 info-38 info-39 info-39 "
+          
+          " coo coo coo coo "
+          " img-40 img-40 img-41 img-41 "
+          " img-40 img-40 img-41 img-41 "
+          "info-40 info-40 info-41 info-41 "
+          " img-42 img-42 img-43 img-43 "
+          " img-42 img-42 img-43 img-43 "
+          "info-42 info-42 info-43 info-43 "
+          " img-44 img-44 img-45 img-45 "
+          " img-44 img-44 img-45 img-45 "
+          "info-44 info-44 info-45 info-45 "
+          ;
+      }
+  }
+  
+  @media screen and (max-width: 362px){
+  
+    #productItems {
+      width: 80%;
+      
+  }
+
+  aside{
+    width: 20%;
+  }
+      .modal {
+          width: 100%;
+          max-width: 100%;
+          max-height: 95vh;
+          padding: 15px;
+          border-radius: 0;
+          overflow-y: auto;
+        }
+      
+        .modal-header {
+          
+          padding: 15px;
+        }
+      
+        .title-modal {
+          font-size: 1rem;
+        }
+      
+        .close-modal {
+          font-size: 30px;
+          align-self: flex-end;
+        }
+      
+        table {
+          font-size: 0.85rem;
+        }
+      
+        td {
+          display: block;
+          width: 100%;
+          padding: 5px 0;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+          width: 100%;
+          font-size: 0.9rem;
+          padding: 8px;
+        }
+      
+        input[type="button"] {
+          width: 100%;
+          padding: 12px;
+          font-size: 1rem;
+        }
+      
+  
+  
+  
+      .btn-home {
+          margin: 0;
+          padding: 8px;
+          font-size: .5rem;
+          font-weight: bold;
+      }
+  
+      .Brand-Name{
+          font-size: 1rem;
+          padding-top: 2vh;
+      }
+  
+      .tittle{
+          font-size: 1.5rem;
+      }
+  
+      h4{
+          font-size: 1rem;
+      }
+  
+      .info > p{
+          font-size: .5rem;
+      }
+  
+      .img-nav-container {
+          width: 120px;
+          top: 50px;
+      }
+  
+      .btn-ctz{
+          font-size: .5rem;
+      }
+      .img-nav > a{
+          font-size: .5rem;
+      }
+      .container{
+         
+          
+          margin-right: 0;
+          row-gap: 25px;
+          column-gap: 10px;
+          grid-template-columns: repeat(4, 50px);
+          grid-template-rows: repeat(79, 10vh); 
+          grid-template-areas:  
+          " Bday-Container Bday-Container Bday-Container Bday-Container "
+          " img-1 img-1 img-2 img-2 "
+          " img-1 img-1 img-2 img-2 " 
+          " info-1 info-1 info-2 info-2"
+          " img-3 img-3 img-4 img-4 "
+          " img-3 img-3 img-4 img-4 "
+          "info-3 info-3 info-4 info-4 "
+          " img-5 img-5 img-6 img-6 "
+          " img-5 img-5 img-6 img-6 "
+          "info-5 info-5 info-6 info-6 "
+          " img-7 img-7 img-8 img-8 "
+          " img-7 img-7 img-8 img-8 "
+          "info-7 info-7 info-8 info-8 "
+          " img-9 img-9 img-10 img-10 "
+          " img-9 img-9 img-10 img-10 "
+          "info-9 info-9 info-10 info-10 "
+          " img-11 img-11 img-12 img-12 "
+          " img-11 img-11 img-12 img-12 "
+          "info-11 info-11 info-12 info-12 "
+  
+          " wedding-container wedding-container wedding-container wedding-container "
+          " img-13 img-13 img-14 img-14 "
+          " img-13 img-13 img-14 img-14 "
+          "info-13 info-13 info-14 info-14 "
+          " . img-15 img-15 . "
+          " . img-15 img-15 . "
+          ". info-15 info-15 . "
+  
+         " babtism babtism babtism babtism"
+          " img-16 img-16 img-17 img-17 "
+          " img-16 img-16 img-17 img-17 "
+          "info-16 info-16 info-17 info-17 "
+          " img-18 img-18 img-19 img-19 "
+          " img-18 img-18 img-19 img-19 "
+          "info-18 info-18 info-19 info-19 "
+          " img-20 img-20 img-21 img-21 "
+          " img-20 img-20 img-21 img-21 "
+          "info-20 info-20 info-21 info-21 "
+          " img-22 img-22 img-23 img-23 "
+          " img-22 img-22 img-23 img-23 "
+          "info-22 info-22 info-23 info-23 "
+          " . img-24 img-24 . "
+          " . img-24 img-24 . "
+          ". info-24 info-24 . "
+  
+          " num num num num "
+          " img-25 img-25 img-26 img-26 "
+          " img-25 img-25 img-26 img-26 "
+          "info-25 info-25 info-26 info-26 "
+          " img-27 img-27 img-28 img-28 "
+          " img-27 img-27 img-28 img-28 "
+          "info-27 info-27 info-28 info-28 "
+          " img-29 img-29 img-30 img-30 "
+          " img-29 img-29 img-30 img-30 "
+          "info-29 info-29 info-30 info-30 "
+          
+          " bento bento bento bento "
+          " img-31 img-31 img-32 img-32 "
+          " img-31 img-31 img-32 img-32 "
+          "info-31 info-31 info-32 info-32 "
+          " . img-33 img-33 . "
+          " . img-33 img-33 . "
+          ". info-33 info-33 . "
+       
+          " cup cup cup cup "
+          " img-34 img-34 img-35 img-35 "
+          " img-34 img-34 img-35 img-35 "
+          "info-34 info-34 info-35 info-35 "
+          " img-36 img-36 img-37 img-37 "
+          " img-36 img-36 img-37 img-37 "
+          "info-36 info-36 info-37 info-37 "
+          " img-38 img-38 img-39 img-39 "
+          " img-38 img-38 img-39 img-39 "
+          "info-38 info-38 info-39 info-39 "
+          
+          " coo coo coo coo "
+          " img-40 img-40 img-41 img-41 "
+          " img-40 img-40 img-41 img-41 "
+          "info-40 info-40 info-41 info-41 "
+          " img-42 img-42 img-43 img-43 "
+          " img-42 img-42 img-43 img-43 "
+          "info-42 info-42 info-43 info-43 "
+          " img-44 img-44 img-45 img-45 "
+          " img-44 img-44 img-45 img-45 "
+          "info-44 info-44 info-45 info-45 "
+          ;
+      }
+  }
+  
